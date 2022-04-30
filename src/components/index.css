@@ -1,0 +1,105 @@
+.sidebar {
+    @apply bg-white;
+    @apply border-r;
+    @apply border-offwhite2;
+    @apply h-screen;
+    @apply overflow-y-scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.sidebar::-webkit-scrollbar { 
+    @apply hidden;  /* Safari and Chrome */
+}
+
+.sidebar .MuiListItem-root.Mui-selected {
+    @apply bg-white;
+}
+
+.sidebar .MuiListItem-root.Mui-selected::before {
+    content: "";
+    width: 6px;
+    @apply h-full;
+    @apply absolute;
+    @apply top-0;
+    @apply left-0;
+    @apply z-10;
+    @apply rounded-r-md;
+    @apply bg-blue;
+}
+
+@media (min-width:768px) {
+    .topbar {
+        width: calc(100% - 240px) !important;
+        margin-left: 240px;
+    }
+}
+
+.search-input .MuiInputBase-input {
+    @apply text-xs;
+    @apply text-lightblue;
+}
+
+.button-input .MuiInputBase-input {
+    @apply text-base;
+    @apply text-darkblue;
+}
+
+.button-input .MuiOutlinedInput-input {
+    @apply pl-6;
+    width: 100px;
+}
+
+@media (max-width:767px) {
+    .search-input .MuiInputBase-input, .button-input .MuiInputBase-input {
+        @apply p-3;
+    }
+}
+
+.search-input .MuiOutlinedInput-root, .button-input .MuiOutlinedInput-root {
+    @apply bg-offwhite;
+    @apply rounded-full;
+}
+
+.search-input .MuiOutlinedInput-notchedOutline, .button-input .MuiOutlinedInput-notchedOutline {
+    @apply border-offwhite;
+}
+
+.button-input .MuiOutlinedInput-adornedEnd {
+    @apply pr-0;
+}
+
+.settings-view .MuiSwitch-track {
+    @apply bg-lightgrey;
+}
+
+.settings-view .MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+    @apply border-none;
+    @apply bg-seagreen;
+}
+
+.custom-input .MuiOutlinedInput-root, .custom-dropdown .MuiOutlinedInput-root {
+    @apply border-lightgrey;
+    @apply rounded-xl;
+}
+
+.custom-input .MuiInputBase-input, .custom-dropdown .MuiInputBase-input {
+    @apply py-3;
+}
+
+.custom-input .MuiInputBase-input, .custom-dropdown .MuiInputBase-input {
+    @apply text-base;
+    @apply text-lightblue;
+}
+
+.yellow-gradient-background {
+    background: linear-gradient(107.38deg, #FFAA07 2.61%, #D99D2A 101.2%);
+}
+
+.blue-gradient-background {
+    background: linear-gradient(107.38deg, #2D60FF 2.61%, #539BFF 101.2%);
+}
+
+.white-gradient-background {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+}

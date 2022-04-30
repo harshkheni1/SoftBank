@@ -1,0 +1,34 @@
+.img-center {
+	@apply m-auto;
+	@apply block;
+}
+
+.heading1 {
+	@apply text-2xl;
+	@apply font-semibold;
+}
+
+.heading2 {
+	@apply text-xl;
+	@apply font-semibold;
+}
+
+.heading3 {
+	@apply text-lg;
+	@apply font-medium;
+}
+
+.body1 {
+	@apply text-base;
+	@apply font-medium;
+}
+
+.body2 {
+	@apply text-sm;
+	@apply font-normal;
+}
+
+.small1 {
+	@apply text-xs;
+	@apply font-normal;
+}

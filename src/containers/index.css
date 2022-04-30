@@ -1,0 +1,38 @@
+.nav-tabs button:focus {
+    @apply outline-none;
+}
+
+.nav-tabs .MuiTab-textColorInherit.Mui-selected {
+    @apply text-blue;
+}
+
+.nav-tabs .PrivateTabIndicator-root-5 {
+    height: 3px;
+    @apply rounded-t-full;
+    @apply bg-blue;
+}
+
+.table-pagination button:focus {
+    @apply outline-none;
+}
+
+.table-pagination .MuiTablePagination-selectRoot {
+    @apply mr-2;
+}
+
+.table-pagination .MuiTablePagination-actions {
+    @apply ml-2;
+}
+
+.table-pagination .MuiIconButton-root {
+    @apply p-1;
+}
+
+.person-list {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.person-list::-webkit-scrollbar { 
+    @apply hidden;  /* Safari and Chrome */
+}
